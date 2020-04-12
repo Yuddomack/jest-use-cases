@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 작성</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/post_write.css" />
+    <script src="js/global.js"></script>
+    <script src="js/api.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <form class="Form">
+        <h1>글쓰기</h1>
+        <div class="Form__title">
+          <input
+            type="text"
+            class="Form__title__input"
+            name="title"
+            placeholder="제목을 입력하세요"
+          />
+        </div>
+        <hr />
+        <textarea class="Form__body" name="body"></textarea>
+        <section class="clearfix">
+          <div class="Form__course left">
+            <select class="Form__course__select" name="course_id">
+              <option value="-1">강의 목록</option>
+            </select>
+          </div>
+
+          <div class="Form__author left">
+            <input
+              type="text"
+              class="Form__author__input"
+              name="author"
+              placeholder="작성자"
+            />
+          </div>
+          <button class="Form__submit right">등록하기</button>
+        </section>
+      </form>
+    </div>
+    <script src="js/post_write.js"></script>
+  </body>
+</html>

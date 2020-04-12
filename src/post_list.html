@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 목록</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/post_list.css" />
+    <script src="js/global.js"></script>
+    <script src="js/api.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <h2>글 목록</h2>
+      <header class="Header clearfix">
+        <div class="Header__filter left">
+          <select class="Header__filter__select">
+            <option value="0">모두보기</option>
+            <option value="1">해결</option>
+            <option value="2">미해결</option>
+          </select>
+        </div>
+        <form class="Header__searchForm right">
+          <input
+            type="text"
+            name="search"
+            class="Header__searchForm__input"
+            placeholder="검색어를 입력하세요"
+          />
+          <button class="Header__searchForm__button">검색</button>
+        </form>
+      </header>
+      <section class="PostList">
+        <article class="Post">
+          <div class="Post__info">
+            <div>
+              <a href="#" class="Post__title">불러오는 중입니다</a>
+            </div>
+            <div class="Post__detail">-</div>
+            <div class="Post__detail">-</div>
+            <div class="Post__body">불러오는 중입니다</div>
+          </div>
+          <div class="Post_resolved">답변대기중</div>
+        </article>
+      </section>
+      <article class="Write">
+        <a href="post_write.html" class="Write_button">+</a>
+      </article>
+
+      <nav class="Nav">
+        <button class="Nav__button left">이전</button>
+        <button class="Nav__button right">다음</button>
+        <div class="Nav__group">
+          <button class="Nav__button Nav__button--selected">1</button>
+        </div>
+      </nav>
+    </div>
+    <script src="js/post_list.js"></script>
+  </body>
+</html>

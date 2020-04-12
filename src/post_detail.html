@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 상세</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/post_detail.css" />
+    <script src="js/global.js"></script>
+    <script src="js/api.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <header class="Header clearfix">
+        <div class="Header__detail">[작성자] 불러오는 중 / 불러오는 중</div>
+        <h1 class="Header__title">불러오는 중</h1>
+        <button class="Header__resolveButton">불러오는 중</button>
+      </header>
+      <hr />
+      <section class="Content">
+        <!-- <article>
+          <div class="Content__info">작성자, 시간</div>
+          <div class="Content__body">글 내용</div>
+          <div class="Content__course">연관강의</div>
+      </article> -->
+      </section>
+
+      <form class="CommentForm clearfix">
+        <div>작성자</div>
+        <input type="text" class="CommentForm__author" name="author" />
+        <div>내용</div>
+        <textarea class="CommentForm__editor left" name="body"></textarea>
+        <button class="CommentForm__button right">댓글 등록</button>
+      </form>
+    </div>
+    <script src="js/post_detail.js"></script>
+  </body>
+</html>

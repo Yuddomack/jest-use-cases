@@ -1,0 +1,155 @@
+.Header {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.Header__filter {
+  position: relative;
+  height: 100%;
+}
+
+.Header__filter::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+}
+
+.Header__filter__select {
+  width: 200px;
+  height: 100%;
+  padding: 0 5px 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: white;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.Header__filter__select::-ms-expand {
+  display: none; /* 화살표 없애기 for IE10, 11*/
+}
+
+.Header__searchForm {
+  height: 100%;
+}
+
+.Header__searchForm__input {
+  width: 200px;
+  height: 100%;
+  margin: 0px;
+  padding: 0 10px 0 10px;
+  border: 0.5px solid #ccc;
+  font-size: 14px;
+}
+
+.Header__searchForm__button {
+  width: 50px;
+  height: 100%;
+  margin: 0px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  float: right;
+}
+
+.Post {
+  position: relative;
+  padding: 10px 0 10px 0;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.Post__info {
+  width: 100%;
+  padding: 5px;
+}
+
+.Post__title {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.Post__title:hover {
+  text-decoration: underline;
+}
+
+.Post__detail {
+  font-size: 12px;
+}
+
+.Post__body {
+  margin-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.Post__resolved {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: #fb9a9a;
+}
+
+.Post__resolved--success {
+  background-color: #888;
+}
+
+.Write {
+  padding: 50px 0 50px 0;
+  border-bottom: 0.5px solid #ccc;
+  text-align: center;
+}
+
+.Write_button {
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #888;
+}
+
+.Write_button:hover {
+  background-color: black;
+}
+
+.Nav {
+  margin-top: 25px;
+}
+
+.Nav__group {
+  text-align: center;
+}
+
+.Nav__button {
+  padding: 15px 20px 15px 20px;
+  border: 0.5px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Nav__button:hover {
+  border: 0.5px solid #444;
+}
+
+.Nav__button--selected {
+  border: 0px;
+  background-color: #fb9a9a;
+  color: white;
+}
